@@ -1,0 +1,31 @@
+[tool.ruff]
+line-length = 88  # Max line length
+extend-exclude = [  # Exclude directories from Ruff checks, add more as needed.
+".venv", "pycache", "migrations", "build", "dist", "alembic", "test", "tests",
+]
+
+[tool.ruff.lint]
+select = [  # Enable specific linting rules
+"E",  # Style errors (whitespace, indentation, etc.)
+"F",  # Detection errors (unused variables, etc.)
+"B",  # Best practices (flake8-bugbear)
+"S",  # Security checks (flake8-bandit)
+"PL",  # Pylint compatibility
+]
+ignore = [  # Ignore specific errors
+"E203",  # Formatting conflicts with Black
+"E501",  # Line length (handled by Black)
+]
+
+[tool.ruff.format]
+quote-style = "double"  # Use double quotes for strings
+line-ending = "auto"  # Auto-detect line endings (LF/CRLF)
+
+[tool.isort]
+skip = [  # Exclude directories from import sorting, add more as needed.
+".venv", "pycache", "migrations", "build", "dist", "alembic", "test", "tests",
+]
+multi_line_output = 3  # Use multiline import formatting style
+include_trailing_comma = true  # Add trailing commas in multiline imports
+force_grid_wrap = 3  # Force wrapping imports in groups
+line_length = 88  # Max line length for imports
