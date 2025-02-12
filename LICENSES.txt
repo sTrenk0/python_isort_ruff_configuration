@@ -1,0 +1,10 @@
+============================================================
+            Licenses for third-party libraries
+============================================================
+
+  • ruff - MIT License
+      URL: https://github.com/astral-sh/ruff/blob/main/LICENSE
+  • isort - MIT License
+      URL: https://github.com/PyCQA/isort/blob/main/LICENSE
+
+============================================================
